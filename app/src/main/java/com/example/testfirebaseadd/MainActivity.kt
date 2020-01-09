@@ -2,6 +2,7 @@ package com.example.testfirebaseadd
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.android.homepage.ui.information_centre.RecyclableItem
 import com.google.firebase.database.ChildEventListener
 import com.google.firebase.database.DatabaseReference
@@ -30,6 +31,7 @@ class MainActivity : AppCompatActivity() {
 
         fab.setOnClickListener {
             addNewRecyclableItem()
+            Toast.makeText(getApplicationContext(),"Record added",Toast.LENGTH_SHORT).show()
         }
     }
 
